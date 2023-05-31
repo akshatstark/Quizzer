@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:quiz_app/Controllers/question_controllers.dart';
 import 'package:quiz_app/constants.dart';
+import 'package:quiz_app/screens/welcome/welcome_screen.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
 class ScoreScreen extends StatelessWidget {
@@ -30,6 +31,22 @@ class ScoreScreen extends StatelessWidget {
                   headline4.
                   copyWith(color: kSecondaryColor),),
               Spacer(flex:3),
+              InkWell(
+                onTap: ()=> Get.to(WelcomeScreen()),
+                child: Container(
+                  width: 200,
+                  padding: EdgeInsets.all(15),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration( borderRadius: BorderRadius.circular(80),
+                    border: Border.all( color: Colors.grey),
+                      //color: kSecondaryColor
+                    ),
+                  child: Row(
+
+                  ),
+                  ),
+                )
+
           ]
           )
         ],

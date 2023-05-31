@@ -86,7 +86,7 @@ class QuestionController extends GetxController with SingleGetTickerProviderMixi
     animationController.stop();
     update();
 
-    Future.delayed(Duration(seconds: 3), () {
+    Future.delayed(Duration(seconds: 1), () {
       nextQuestion();
     });
   }

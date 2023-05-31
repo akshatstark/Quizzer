@@ -10,8 +10,8 @@ const List sample_data = [
   {
     "id": 1,
     "question":
-        "Flutter is an open-source UI software development kit created by ______",
-    "options": ['Apple', 'Google', 'Facebook', 'Microsoft'],
+        " Why is AWS more economical than traditional data centers for applications with varying compute workloads",
+    "options": ['EC2 build on monthly basis', 'Users retain full administrative access', 'EC2 instances can be launched on demand', 'Users can handle peak workloads'],
     "answer_index": 1,
   },
   {

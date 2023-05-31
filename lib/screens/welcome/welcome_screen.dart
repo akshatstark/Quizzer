@@ -15,19 +15,21 @@ class WelcomeScreen extends StatelessWidget {
           SafeArea(child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
+              // crossAxisAlignment: CrossAxisAlignment.start,
               children:[
                 Spacer(flex: 2),
             Text("Lets Play a Quiz,",style: Theme.of(context)
                 .textTheme.headline4
                 .copyWith(color: Colors.white, fontWeight: FontWeight.bold),
+              textAlign: TextAlign.right,
+
             ),
-            Text("Enter info below"),
+            Text("AWS Practice Quiz"),
             Spacer(),
             TextField(decoration: InputDecoration(
                 filled:true,
                 fillColor: Color(0xFF1C2341),
-                hintText: "Full Name",
+                hintText: "Your Name",
             border: OutlineInputBorder(
               borderRadius: BorderRadius.all(Radius.circular(12)),
             )
