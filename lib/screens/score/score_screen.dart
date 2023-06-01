@@ -18,23 +18,23 @@ class ScoreScreen extends StatelessWidget {
           WebsafeSvg.asset("assets/icons/bg.svg" , fit: BoxFit.fill , width: 420),
           Column(
             children: [
-          Spacer(flex: 3,),
+          Spacer(flex: 5),
           Text("Score",
           style: Theme.of(context).
           textTheme.
           headline2.
           copyWith(color: kSecondaryColor)),
-            Spacer(),
+            Spacer(flex: 2),
               Text("${_questionController.numOfCorrectAns*10}/${_questionController.questions.length*10}",
                   style: Theme.of(context).
                   textTheme.
                   headline4.
                   copyWith(color: kSecondaryColor),),
-              Spacer(flex:3),
+              Spacer(flex: 4),
               InkWell(
                 onTap: ()=> Get.to(WelcomeScreen()),
                 child: Container(
-                  width: 200,
+                  width: 170,
                   padding: EdgeInsets.all(15),
                   alignment: Alignment.center,
                   decoration: BoxDecoration( borderRadius: BorderRadius.circular(80),
@@ -42,10 +42,18 @@ class ScoreScreen extends StatelessWidget {
                       //color: kSecondaryColor
                     ),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Restart",
+                      style: TextStyle(color: kSecondaryColor,fontSize: 25),),
+                      Icon(Icons.refresh,size: 30,color: Colors.greenAccent),
 
+                    ],
                   ),
                   ),
-                )
+
+                ),Spacer(flex:3),
+
 
           ]
           )

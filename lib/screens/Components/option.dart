@@ -46,14 +46,14 @@ class Option extends StatelessWidget {
             padding: EdgeInsets.all(kDefaultPadding/2),
             decoration: BoxDecoration(
                // color: getTheRightColor() == kGrayColor? Colors.transparent:(getTheRightColor().withOpacity(20)),
-                borderRadius: BorderRadius.circular(15),
+                borderRadius: BorderRadius.circular(16),
                 border: Border.all(color: getTheRightColor())),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Text(
                   "${index+1}. $text",
-                  style: TextStyle(fontSize: 16,color: getTheRightColor()),
+                  style: TextStyle(fontSize: 14,color: getTheRightColor()),
                 ),
                 Container(
                   height: 26,

@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       title: 'Quiz App',
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark(),
-      home: ScoreScreen(),
+      home: QuizScreen(),
     );
   }
 }
