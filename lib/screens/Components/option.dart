@@ -40,31 +40,36 @@ class Option extends StatelessWidget {
 
 
         return InkWell(
+
           onTap: press,
           child: Container(
             margin: EdgeInsets.only(top: kDefaultPadding),
             padding: EdgeInsets.all(kDefaultPadding/2),
             decoration: BoxDecoration(
                // color: getTheRightColor() == kGrayColor? Colors.transparent:(getTheRightColor().withOpacity(20)),
-                borderRadius: BorderRadius.circular(16),
-                border: Border.all(color: getTheRightColor())),
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: getTheRightColor())
+            ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(
-                  "${index+1}. $text",
-                  style: TextStyle(fontSize: 14,color: getTheRightColor()),
+                Expanded(child: Container(
+              child: Text(
+                "${index+1}. $text",
+                style: TextStyle(fontSize: 15,color: getTheRightColor()),
+              ),
+                )
                 ),
                 Container(
-                  height: 26,
-                  width: 26,
-                  decoration: BoxDecoration(
-                      color: getTheRightColor() == kGrayColor? Colors.transparent:getTheRightColor(),
-                      borderRadius: BorderRadius.circular(50),
-                      border: Border.all(color: getTheRightColor())
-                  ),
-                  child: Icon(getTheRightIcon(), size: 16,),
-                )
+                      height: 26,
+                      width: 26,
+                      decoration: BoxDecoration(
+                          color: getTheRightColor() == kGrayColor? Colors.transparent:getTheRightColor(),
+                          borderRadius: BorderRadius.circular(50),
+                          border: Border.all(color: getTheRightColor())
+                      ),
+                      child: Icon(getTheRightIcon(), size: 16,),
+                    )
               ],
             ),
           ),
